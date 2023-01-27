@@ -50,7 +50,16 @@ const App = () => {
       <Grid>
         {list.map(({ title, par }, i) => (
           <Grid.Col span={4} key={`index ${i}`}>
-            <Card par={par} title={title} index={i} />
+            <Card
+              par={par}
+              title={title}
+              i={i}
+              click={() => {
+                let copyList = [...list];
+                copyList.splice(i, 1);
+                setList(copyList);
+              }}
+            />
           </Grid.Col>
         ))}
       </Grid>
