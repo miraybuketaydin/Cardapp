@@ -1,4 +1,4 @@
-import { Button, Input, Textarea, Container, Stack, Grid } from "@mantine/core";
+ import { Button, Input, Textarea, Container, Stack, Grid } from "@mantine/core";
 import "./App.css";
 import Card from "./components/Card";
 import { useState } from "react";
